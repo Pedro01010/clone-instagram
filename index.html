@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./imgh/sds.css">
+    <title>instagram</title>
+
+
+
+
+<body>
+
+    <div class="container-image">
+        <img src="./imgh/celular.png" class="img-celularis">
+        <img src="./imgh/insta1.png" class="imagem-celular">
+        <img src="./imgh/insta2.png" class="imagem-celular" id="troca-imagem">
+
+    </div>
+
+    <form class="form" action="https://www.youtube.com/">
+        <div class="container">
+            <div class="form">
+                <img src="./imgh/insta-logo.png" class="insta-logo">
+
+                <input class="email" placeholder="Telefone, nome de usuário ou email" type="email" name="email"
+                    required>
+                <input class="senha" placeholder="senha" type="password" name="senha" required>
+
+                <button type="submit">ENTRAR</button></a>
+
+                <p class="ou">
+                    <font face="arial" size="2">OU</font>
+                </p>
+
+                <a class="login-facebook" href="https://pt-br.facebook.com/login/device-based/regular/login/">Entrar com
+                    o
+                    Facebook</a>
+                <a class="esqueceu-senha">Esqueceu a senha?</a>
+            </div>
+
+            <div class="container-cadastro">
+                <p class="paragrafo-conta">Não tem uma conta?</p><a href="" class="cadastro-conta">Cadastra-se</a>
+            </div>
+
+
+            <p class="paragrafo-app">Obtenha o aplicativo</p>
+
+            <div class="container-logo">
+                <a href="https://apps.apple.com/br/app/instagram/id389801252"><img src="./imgh/ios.png" alt="logo ios" class="logo-api" type="input">
+                        
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US"><img
+                        src="./imgh/google.png" alt="logo do google" class="logo-api"></a>
+            </div>
+        </div>
+    </form>
+</body>
+<script>
+    let imagem = document.getElementById("troca-imagem")
+
+
+    function trocaImagem() {
+
+        if (imagem.style.opacity == 0) {
+            imagem.style.opacity = 1
+        }
+        else {
+            imagem.style.opacity = 0
+        }
+    }
+
+    setInterval(function () {
+        trocaImagem()
+    }, 4000);
+
+</script>
+
+
+</html>
